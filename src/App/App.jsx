@@ -43,7 +43,7 @@ const App = () => {
                     - Lotes (Batches): <a href="http://www.api-inventory-management.somee.com/batch" target="_blank" rel="noopener noreferrer">http://www.api-inventory-management.somee.com/batch</a>
                     <br />
                     <br />
-                    Si se quiere filtrar por "id": <a href="http://www.api-inventory-management.somee.com/tabla/id=NUMERO_ID" target="_blank" rel="noopener noreferrer">http://www.api-inventory-management.somee.com/"NOMBREDETABLA"/id="NUMERO_ID"</a>
+                    Si se quiere filtrar por "id": http://www.api-inventory-management.somee.com/NOMBRE_TABLA/id=NUMERO_ID" 
                 </p>
             </section>
 

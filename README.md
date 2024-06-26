@@ -1,9 +1,10 @@
-## CRUD User Frontend
+## Bienvenid@ a API Inventory Management
 
-Este respoitorio contiene el servicio Frontend que se comunica con una API-REST.
-El proyecto consta de otro servicio interconectado que realiza la función del Backend.
-Este servicio se encuentra en el repositorio "CRUDUserBackend" 
+Esta página web que he desarrollado utilizando React imprime en formato JSON los datos que obtiene de la conexión a una API-REST pública para métodos GET propia, la cual utiliza C# .NET.
 
-# Contenido
-La Aplicación Web en React realiza consultas HTTP GET a la API-REST para luego 
-mostrar los datos en una interfaz visual para el usuario. 
+En el caso de que se quiera probar la API:
+- Productos (Products): http://www.api-inventory-management.somee.com/product
+- Proveedores (Suppliers): http://www.api-inventory-management.somee.com/supplier
+- Lotes (Batches): http://www.api-inventory-management.somee.com/batch
+
+Si se quiere filtrar por "id": http://www.api-inventory-management.somee.com/"NOMBREDETABLA"/id="NUMERO_ID"
