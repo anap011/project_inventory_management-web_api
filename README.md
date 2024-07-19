@@ -1,10 +1,24 @@
-## Bienvenid@ a API Inventory Management
+# Proyecto Web API en JavaScript con ReactJS
 
-Esta página web que he desarrollado utilizando React imprime en formato JSON los datos que obtiene de la conexión a una API-REST pública para métodos GET propia, la cual utiliza C# .NET.
+Esta página web que he desarrollado utilizando JavaScript con la librería React. Permite visualizar los distinots endpoints públicos proporcionado por la API en formato JSON, conteniendo como base los productos, proveedores y lotes. 
 
-En el caso de que se quiera probar la API:
-- Productos (Products): http://www.api-inventory-management.somee.com/product
-- Proveedores (Suppliers): http://www.api-inventory-management.somee.com/supplier
-- Lotes (Batches): http://www.api-inventory-management.somee.com/batch
+###En el caso de que se acceder la API: 
+**- Productos (Products):**
 
-Si se quiere filtrar por "id": http://www.api-inventory-management.somee.com/"NOMBREDETABLA"/id="NUMERO_ID"
+http://www.api-inventory-management.somee.com/product
+
+Si se quiere filtrar por "id": 
+    http://www.api-inventory-management.somee.com/product/id={id}
+
+**- Proveedores (Suppliers):**
+
+http://www.api-inventory-management.somee.com/supplier
+
+Si se quiere filtrar por "id": 
+    http://www.api-inventory-management.somee.com/supplier/id={id}
+
+**- Lotes (Batches):**
+http://www.api-inventory-management.somee.com/batch
+
+Si se quiere filtrar por "id": 
+    http://www.api-inventory-management.somee.com/batch/id={id}
