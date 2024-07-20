@@ -12,7 +12,7 @@ const App = () => {
         })
             .then((response) => response.json())
             .then((jsonData) => {
-                setData(jsonData); // Asigna los datos recibidos al estado 'data'
+                setData(jsonData); 
             })
             .catch((err) => {
                 console.log(err.message);
