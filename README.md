@@ -1,8 +1,8 @@
 # Proyecto Web API en JavaScript con ReactJS
 
-Esta página web que he desarrollado utilizando JavaScript con la librería React. Permite visualizar los distinots endpoints públicos proporcionado por la API en formato JSON, conteniendo como base los productos, proveedores y lotes. 
+Esta página web que he desarrollado utilizando JavaScript con la librería React. Permite visualizar los distintos endpoints públicos proporcionado por la API en formato JSON, conteniendo como base los productos, proveedores y lotes. 
 
-## Tencologías
+## Tecnologías
 - **Node.js**: 20.12.2 https://nodejs.org/en
 - **npm**: 10.5.0
 - **React**: 18.2.0 - https://react.dev/
@@ -32,24 +32,24 @@ Esta página web que he desarrollado utilizando JavaScript con la librería Reac
 
 
 
-##Acceder la API: 
+## Acceder a la API: 
 
 **- Productos / Products:**
 
-http://www.api-inventory-management.somee.com/product
+https://www.api-inventory-management.somee.com/v1/productos
 
 Filtrar por "id": 
-    http://www.api-inventory-management.somee.com/product/id={id}
+    https://www.api-inventory-management.somee.com/v1/productos/{id}
 
 **- Proveedores / Suppliers:**
 
-http://www.api-inventory-management.somee.com/supplier
+https://www.api-inventory-management.somee.com/v1/proveedores
 
 Filtrar por "id": 
-    http://www.api-inventory-management.somee.com/supplier/id={id}
+    https://www.api-inventory-management.somee.com/v1/proveedores/{id}
 
 **- Lotes / Batches:**
-http://www.api-inventory-management.somee.com/batch
+https://www.api-inventory-management.somee.com/v1/lotes
 
 Filtrar por "id": 
-    http://www.api-inventory-management.somee.com/batch/id={id}
+    https://www.api-inventory-management.somee.com/v1/lotes/{id}

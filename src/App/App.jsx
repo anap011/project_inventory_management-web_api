@@ -7,7 +7,7 @@ const App = () => {
     const [activeKey, setActiveKey] = useState("product");
 
     const fetchData = (endpoint) => {
-        fetch(`https://www.api-inventory-management.somee.com/${endpoint}`, {
+        fetch(`https://www.api-inventory-management.somee.com/v1/${endpoint}`, {
             method: 'GET'
         })
             .then((response) => response.json())
@@ -27,32 +27,31 @@ const App = () => {
         <div className="App">
             <header className="App-header">
                 <h2>
-                    Bienvenid@ a API Inventory Management
+                    ¡Bienvenido a la API de Control de Inventario!
                 </h2>
             </header>
             <section className='App-description'>
                 <p>
-                    Esta página web que he desarrollado utilizando React imprime en formato JSON los datos que obtiene de la conexión a una API-REST pública para métodos GET propia, la cual utiliza C# .NET.
+                    Esta página web, desarrollada con React, permite visualizar datos en formato JSON obtenidos de una API REST pública. La API, construida con C# y .NET, está diseñada para ofrecer métodos GET para la gestión de inventarios.
                 </p>
-                <p>En el caso de que se quiera probar la API:
+                <p>En el caso de que se quiera ver la API:
                     <br />
-                    - Productos (Products): <a href="http://www.api-inventory-management.somee.com/product" target="_blank" rel="noopener noreferrer">http://www.api-inventory-management.somee.com/product</a>
+                    - Productos : <a href="https://www.api-inventory-management.somee.com/v1/productos" target="_blank" rel="noopener noreferrer">https://www.api-inventory-management.somee.com/productos</a>
                     <br />
-                    - Proveedores (Suppliers): <a href="http://www.api-inventory-management.somee.com/supplier" target="_blank" rel="noopener noreferrer">http://www.api-inventory-management.somee.com/supplier</a>
+                    - Proveedores : <a href="https://www.api-inventory-management.somee.com/v1/proveedores" target="_blank" rel="noopener noreferrer">https://www.api-inventory-management.somee.com/v1/proveedores</a>
                     <br />
-                    - Lotes (Batches): <a href="http://www.api-inventory-management.somee.com/batch" target="_blank" rel="noopener noreferrer">http://www.api-inventory-management.somee.com/batch</a>
+                    - Lotes : <a href="https://www.api-inventory-management.somee.com/v1/lotes" target="_blank" rel="noopener noreferrer">https://www.api-inventory-management.somee.com/v1/lotes</a>
                     <br />
                     <br />
-                    Si se quiere filtrar por "id": http://www.api-inventory-management.somee.com/NOMBRE_TABLA/id=NUMERO_ID" 
+                    Si se quiere filtrar por "id": http://www.api-inventory-management.somee.com/v1/NOMBRE_TABLA/NUMERO_ID" 
                 </p>
             </section>
 
             <section className='App-nav'>
                 <Nav justified appearance='default' ActiveKey={activeKey} onSelect={setActiveKey}>
-                    <Nav.Item eventKey="Productos" onSelect={() => fetchData('product')} className="nav-item"> Productos (Products)</Nav.Item>
-                    <Nav.Item eventKey="Proveedores" onSelect={() => fetchData('supplier')} className="nav-item">Proveedores (Suppliers)</Nav.Item>
-                    <Nav.Item eventKey="Lotes" onSelect={() => fetchData('batch')} className="nav-item">Lotes (Batches)</Nav.Item>
-                    {/*<Nav.Item eventKey="About" className="nav-item">About</Nav.Item> */}
+                    <Nav.Item eventKey="Productos" onSelect={() => fetchData('productos')} className="nav-item"> Productos</Nav.Item>
+                    <Nav.Item eventKey="Proveedores" onSelect={() => fetchData('proveedores')} className="nav-item">Proveedores </Nav.Item>
+                    <Nav.Item eventKey="Lotes" onSelect={() => fetchData('lotes')} className="nav-item">Lotes</Nav.Item>
                 </Nav>
             </section>
             
