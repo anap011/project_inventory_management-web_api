@@ -34,22 +34,31 @@ Esta página web que he desarrollado utilizando JavaScript con la librería Reac
 
 ## Acceder a la API: 
 
-**- Productos / Products:**
+**- Productos:**
 
 https://www.api-inventory-management.somee.com/v1/productos
 
 Filtrar por "id": 
     https://www.api-inventory-management.somee.com/v1/productos/{id}
 
-**- Proveedores / Suppliers:**
+**- Proveedores:**
 
 https://www.api-inventory-management.somee.com/v1/proveedores
 
 Filtrar por "id": 
     https://www.api-inventory-management.somee.com/v1/proveedores/{id}
 
-**- Lotes / Batches:**
+**- Lotes :**
 https://www.api-inventory-management.somee.com/v1/lotes
 
 Filtrar por "id": 
     https://www.api-inventory-management.somee.com/v1/lotes/{id}
+
+
+## Links de los respositorios que complementan este proyecto = 
+
+https://github.com/anap011/project_inventory_management-api
+
+https://github.com/anap011/project_inventory_management-web_crud
+
+https://github.com/anap011/project_inventory_management-backend_login
